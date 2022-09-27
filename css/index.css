@@ -1,0 +1,305 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+nav {
+  max-width: 1400px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .nav-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item {
+  font-size: 24px;
+  font-weight: 400 !important;
+  margin: 0 40px;
+}
+
+.nav-item.active-item {
+  color: #fe5e35;
+  font-weight: 800 !important;
+}
+
+.intro-section {
+  max-width: 1400px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-section {
+  flex: 1;
+  margin-top: 80px;
+}
+
+.right-section {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.discount {
+  position: absolute;
+  width: 165px;
+  top: 45%;
+  left: 0;
+}
+
+.discount-content {
+  color: #ffffff;
+  text-align: center;
+  font-size: 24px;
+  position: absolute;
+  left: 5.5%;
+  top: 51%;
+}
+
+.discount-content h4,
+h1 {
+  font-family: "Fredoka One";
+  font-weight: 400;
+}
+
+.discount-content > h4 {
+  font-size: 16px;
+}
+
+.headphone-div {
+  width: 80%;
+}
+
+.headphone-div > img:last-child {
+  width: 100%;
+}
+
+.dot {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 15px;
+}
+
+.dot.yellow-dot {
+  background-color: #fbd104;
+}
+
+.dot.tomato-dot {
+  background-color: #fe5e35;
+}
+
+.dot.black-dot {
+  background-color: #000000;
+}
+
+.action-btn {
+  padding: 15px 30px;
+  margin-top: 30px;
+  background-color: #fe5e35;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 50px;
+  border: 0;
+}
+
+.left-section > h3 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.left-section > h1 {
+  font-size: 70px;
+  font-family: "Fredoka One";
+  font-weight: 400;
+}
+
+.sub-headlines > * {
+  margin-top: 20px;
+}
+
+.sub-headlines {
+  margin: 3em 5em;
+}
+
+.sub-headline {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.sub-headline > * {
+  vertical-align: middle;
+  margin: 0px 10px;
+}
+
+.sub-headline img {
+  background-color: #fe5e35;
+  width: 18px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.text {
+  color: #a5a5a5d3;
+  font-size: 16px;
+}
+
+.action-btns {
+  margin-top: 40px;
+}
+
+.action-btn {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 1500px) {
+  nav,
+  .intro-section {
+    padding: 0 2em;
+  }
+
+  .left-section {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .nav-item {
+    font-size: 20px;
+  }
+
+  .sub-headlines {
+    margin: 2em 4em;
+  }
+
+  .action-btns {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .headphone-div {
+    width: 70%;
+  }
+
+  .discount {
+    width: 125px;
+    top: 35%;
+    left: 4%;
+  }
+
+  .discount-content {
+    font-size: 18px;
+    left: 9%;
+    top: 40%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    flex-direction: column;
+    row-gap: 2.5rem;
+  }
+
+  .intro-section {
+    flex-direction: column-reverse;
+  }
+
+  .left-section {
+    margin: 80px 0;
+  }
+
+  .left-section > h1 {
+    font-size: 50px;
+  }
+
+  .left-section > h3 {
+    font-size: 30px;
+  }
+
+  .headphone-div {
+    width: 40%;
+  }
+
+  .discount {
+    top: 40%;
+    left: 25%;
+  }
+
+  .discount-content {
+    font-size: 16px;
+    left: 28%;
+    top: 47%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .headphone-div {
+    width: 60%;
+    position: relative;
+  }
+
+  .discount {
+    top: 60%;
+    left: -4%;
+  }
+
+  .discount-content {
+    font-size: 16px;
+    left: 2%;
+    top: 67%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav .nav-items {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2em;
+  }
+
+  .nav-item {
+    margin: 0;
+  }
+
+  .headphone-div {
+    width: 100%;
+  }
+
+  .sub-headlines {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .sub-headline {
+    font-size: 20px;
+  }
+
+  .action-btn {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .discount {
+    width: 100px;
+    top: 60%;
+    left: -5%;
+  }
+
+  .discount-content {
+    font-size: 12px;
+    left: 0%;
+    top: 68%;
+  }
+}
